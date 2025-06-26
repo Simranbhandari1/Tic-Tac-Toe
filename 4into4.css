@@ -1,0 +1,125 @@
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+       background-color: #f09bb5;
+      text-align: center;
+    }
+
+    .main {
+      margin-top: 60px;
+    }
+
+    .main h1{
+        font-size: 20vmin;
+        color: rgb(0, 0, 0);
+    }
+    .arrow{
+      position: absolute; 
+      left: 20px;
+    }
+
+    .arrow1{
+      position: absolute; 
+      top: 10px;
+     left: 20px;
+    }
+    .main h1 {
+      font-size: 8vmin;
+    }
+
+    .container {
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .game {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5vmin;
+      width: 60vmin;
+      height: 60vmin;
+    }
+
+    .box {
+      height: 13vmin;
+      width: 13vmin;
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+      font-size: 6vmin;
+      color: #b0413e;
+      background-color: #ffffc7;
+      border: 2px solid rgb(0, 0, 0);
+    }
+
+    #reset-btn, #new-btn {
+      padding: 1rem;
+      font-size: 1.25rem;
+      background-color: #191913;
+      color: #fff;
+      border-radius: 1rem;
+      border: none;
+      animation: blink 2s ease-in infinite;
+      margin: 10px;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
+      }
+      50% {
+        box-shadow: 0px 0px 2px 1px rgb(255, 255, 255);
+      }
+    }
+
+    #msg {
+      color: #000000c9;
+      font-size: 5vmin;
+      font-weight: 600px;
+    }
+
+    .msg-container {
+      height: 100vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    @media only screen and (max-width: 844px) {
+     
+    .container{
+       height: 40vh;
+    }
+
+      .arrow img{
+        width: 30px;
+        height: 30px;
+      }
+
+    .msg-container {
+      height: 218vmin;
+    
+    }
+ #msg {
+      color: #000000c9;
+      font-size: 12vmin;
+    }
+       .arrow1 img{
+        position: relative;
+        top: 140px;
+        width: 40px;
+        height: 40px;
+      }
+
+}
